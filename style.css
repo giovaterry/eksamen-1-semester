@@ -469,7 +469,15 @@ footer p{
   width: 50px;
 }
 
+.facebook{
+  display: flex;
+  justify-content: center;
+}
 
+.facebook img{
+  height: 50px;
+  width: 50px;
+}
 
 /*Medie Queries max. 500px til tablet*/
 @media (max-width:500px){
