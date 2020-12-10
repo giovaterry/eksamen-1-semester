@@ -50,8 +50,6 @@ header .nav-desktop{
     font-size: 20px;
     color: whitesmoke;
     text-align: center;
-    
-    
 }
 
 
@@ -79,7 +77,7 @@ text-decoration: underline;
 
 
 
-/*Giovanna billede START*/
+/*Section med billeder af Giovanna + OM MIG START*/
 
 .main-pic{
     grid-area: mainpic;
@@ -92,10 +90,8 @@ text-decoration: underline;
   background-size: cover;
 
 }
-/*--*/
 
 .main-text{
-    background-color: blue;
     grid-area: maintext;
 
 }
@@ -113,8 +109,12 @@ text-decoration: underline;
     padding-top: 30px;
     grid-area: maintext;
 }
+/*Section med billeder af Giovanna + OM MIG START*/
 
-/*--*/  
+
+
+
+/*Section med kompetencer START*/
 .kompetencer h1{
     font-size: 50px;
     text-align: center;
@@ -137,7 +137,6 @@ text-decoration: underline;
 }
 
 
-
 div .column{
 display: flex;
 justify-content: center;
@@ -149,19 +148,17 @@ div .info-komeptencer{
   justify-content: center;
   justify-content: space-around;
 }
+/*Section med kompetencer SLUT*/
 
 
 
 
 
-/*Portfolio og projekter START*/
-
+/*Projekt rumrejsen START*/
 .project-pic1 {
     background-color: brown;
     grid-area: projectpic1;
-    position: relative;
-    
-  
+    position: relative;  
 }
 
 .project-pic1 img{
@@ -169,8 +166,6 @@ div .info-komeptencer{
   height: 100%;
   width: 100%;
   background-size: cover;
-  
-
 }
 
 
@@ -196,9 +191,11 @@ div .info-komeptencer{
     background-color: chartreuse;
     grid-area: textarea1;
 }
+/*Projekt rumrejsen SLUT*/
 
-/*--*/
 
+
+/*Projekt dans dans dans del1 START*/
 .project-pic2{
     background-color: cornflowerblue;
     grid-area: projectpic2;
@@ -249,10 +246,11 @@ div .info-komeptencer{
     background-color: cyan;
     grid-area: textarea2;
 }
+/*Projekt dans dans dans del1 SLUT*/
 
 
 
-
+/*Projekt dans dans dans del2 START*/
 .project-pic3{
   background-color: cornflowerblue;
   grid-area: projectpic3;
@@ -271,8 +269,6 @@ div .info-komeptencer{
   background-color: cyan;
   grid-area: textarea3;
 }
-
-/*----*/
 
 .project-pic3 {
   background-color: brown;
@@ -311,11 +307,11 @@ opacity: 0.8;
   background-color: chartreuse;
   grid-area: textarea3;
 }
+/*Projekt dans dans dans del2 SLUT*/
 
 
 
-
-
+/*Projekt videoprotræt START*/
 .project-pic4 {
   background-color: brown;
   grid-area: projectpic4;
@@ -353,11 +349,10 @@ opacity: 0.8;
   background-color: chartreuse;
   grid-area: textarea4;
 }
+/*Projekt videoprotræt SLUT*/
 
 
-
-
-
+/*Projekt bag rattet del1 START*/
 .project-pic5 {
   background-color: brown;
   grid-area: projectpic5;
@@ -395,11 +390,10 @@ opacity: 0.8;
   background-color: chartreuse;
   grid-area: textarea5;
 }
+/*Projekt bag rattet del1 SLUT*/
 
 
-
-
-
+/*Projekt bag rattet del2 START*/
 .project-pic6 {
   background-color: brown;
   grid-area: projectpic6;
@@ -437,7 +431,7 @@ opacity: 0.8;
   background-color: chartreuse;
   grid-area: textarea6;
 }
-
+/*Projekt bag rattet del2 SLUT*/
 
 
 
