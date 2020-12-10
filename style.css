@@ -245,7 +245,6 @@ div .info-komeptencer{
 
 
 .text-area2{
-    background-color: cyan;
     grid-area: textarea2;
 }
 /*Projekt dans dans dans del1 SLUT*/
@@ -404,6 +403,7 @@ background-size: cover;
 
 
 .project-pic6 p{
+color: white;
 font-size: 20px;
 position: absolute;
 top: 50%;
@@ -436,7 +436,7 @@ height: 600px;
 }
 
 #kontakt{
-height: 600px;
+height: 450px;
 }
 
 
@@ -454,11 +454,20 @@ footer h1{
 }
 
 footer p{
-  padding-left: 300px;
-  margin-top: 100px;
+  text-align: center;
   font-size: 20px;
 }
 
+
+.instagram{
+  display: flex;
+  justify-content: center;
+}
+
+.instagram img{
+  height: 50px;
+  width: 50px;
+}
 
 
 
