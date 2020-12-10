@@ -1,71 +1,79 @@
 * {
-    padding: 0;
-    margin: 0;
-    font-family: sans-serif;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
 
 }
 
 .grid-container{
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    "header header header header"
-    "mainpic mainpic maintext maintext"
-    "kompetencer kompetencer kompetencer kompetencer"
-    "projectpic1 projectpic1 textarea1 textarea1"
-    "textarea2 textarea2 projectpic2 projectpic2"
-    "projectpic3 projectpic3 textarea3 textarea3"
-    "textarea4 textarea4 projectpic4 projectpic4"
-    "projectpic5 projectpic5 textarea5 textarea5"
-    "textarea6 textarea6 projectpic6 projectpic6"
-    "footer footer footer footer";
-  }
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "header header header header"
+  "mainpic mainpic maintext maintext"
+  "kompetencer kompetencer kompetencer kompetencer"
+  "projectpic1 projectpic1 textarea1 textarea1"
+  "textarea2 textarea2 projectpic2 projectpic2"
+  "projectpic3 projectpic3 textarea3 textarea3"
+  "textarea4 textarea4 projectpic4 projectpic4"
+  "projectpic5 projectpic5 textarea5 textarea5"
+  "textarea6 textarea6 projectpic6 projectpic6"
+  "footer footer footer footer";
+}
 /*Body*/
 body{
-    background-color: #FBF8F9;
+  background-color: #FBF8F9;
 }
 
 
-/*Header START*/
-  header {
-      background-color: #C8A98C;
-      grid-area: header;
-      
-     
-  }
+/*Header START
+Note: z-index:1 tag gør, 
+at mine position:relative tag elemtenter ikke overlapper min sticky header*/
+header {
+    background-color: #C8A98C;
+    grid-area: header;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1
+    
+    
+   
+}
 
-  header .nav-desktop{
-      grid-area: header;
-      margin: 20px;
-      font-size: 20px;
-      color: whitesmoke;
-      text-align: center;
-      
-  }
+header .nav-desktop{
+    grid-area: header;
+    margin: 20px;
+    font-size: 20px;
+    color: whitesmoke;
+    text-align: center;
+    
+    
+}
 
-  
+
 a:link {
-  text-decoration: none;
+text-decoration: none;
 
-  }
+}
 
- a:visited {
-  text-decoration: none;
-  color: whitesmoke;
-  }
+a:visited {
+text-decoration: none;
+color: whitesmoke;
+}
 
- a:hover {
-  text-decoration: none;
-  color: #B9CBD4;
-  }
+a:hover {
+text-decoration: none;
+color: #B9CBD4;
+}
 
- a:active {
-  text-decoration: underline;
-  }
-  /*Header SLUT*/
+a:active {
+text-decoration: underline;
+}
+/*Header SLUT*/
 
 
 
@@ -73,59 +81,60 @@ a:link {
 
 /*Giovanna billede START*/
 
-  .main-pic{
-      background-color: aquamarine;
-      grid-area: mainpic;
-  }
-
-  .main-pic img{
+.main-pic{
     grid-area: mainpic;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
+}
 
-  }
+.giovanna-pic{
+  grid-area: mainpic;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+
+}
 /*--*/
 
-  .main-text{
-      background-color: blue;
-      grid-area: maintext;
+.main-text{
+    background-color: blue;
+    grid-area: maintext;
 
-  }
+}
 
-  .main-text h1{
-      font-size: 50px;
-      text-align: center;
-      margin: 15px;
-  }
+.main-text h1{
+    font-size: 50px;
+    text-align: center;
+    margin: 77px;
+    grid-area: maintext;
+}
 
-  .main-text p{
-      font-size: 20px;
-      margin: 50px;
-      padding-top: 30px;
-  }
+.main-text p{
+    font-size: 20px;
+    margin: 50px;
+    padding-top: 30px;
+    grid-area: maintext;
+}
 
 /*--*/  
 .kompetencer h1{
-      font-size: 50px;
-      text-align: center;
-      margin: 55px;
-      padding-top: 100px;
-      grid-area: kompetencer;
-      
-  }
+    font-size: 50px;
+    text-align: center;
+    margin: 55px;
+    padding-top: 100px;
+    grid-area: kompetencer;
+    
+}
 
 
-  .kompetencer{
-      grid-area: kompetencer;
-  }
+.kompetencer{
+    grid-area: kompetencer;
+}
 
-  .kompetencer img{
-     grid-area: kompetencer;
-     width: 10%;
-     height: auto;
-     
-  }
+.kompetencer img{
+   grid-area: kompetencer;
+   width: 10%;
+   height: auto;
+   
+}
 
 
 
@@ -136,9 +145,9 @@ justify-content: space-around;
 }
 
 div .info-komeptencer{
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
 }
 
 
@@ -147,126 +156,107 @@ div .info-komeptencer{
 
 /*Portfolio og projekter START*/
 
-  .project-pic1 {
-      background-color: brown;
-      grid-area: projectpic1;
-      position: relative;
-    
-  }
-
-  .project-pic1 img{
-    grid-area: projectpic1;
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-
-  }
-
-  
-  .project-pic1 p{
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-
-  .project-pic1:hover .overlay{
-    opacity: 0.8;
-  }
-
-
-  .text-area1{
-      background-color: chartreuse;
-      grid-area: textarea1;
-  }
-
-  /*--*/
-
-  .project-pic2{
-      background-color: cornflowerblue;
-      grid-area: projectpic2;
-      position: relative;
-
-  }
-
-      .project-pic2 img{
-        grid-area: projectpic2;
-        height: 100%;
-        width: 100%;
-        background-size: cover;
-        
-  }
-
-  .project-pic2:hover .overlay{
-    opacity: 0.8;
-  }
-
-  .overlay{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: black;
-  }
-
-  .project-pic2 p{
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-
-
-
-  .text-area2{
-      background-color: cyan;
-      grid-area: textarea2;
-  }
-
-
-
-
-  .project-pic3{
-    background-color: cornflowerblue;
-    grid-area: projectpic3;
-
-  }
-
-  .project-pic3 img{
-    grid-area: projectpic3;
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    
-}
-
-.text-area3{
-    background-color: cyan;
-    grid-area: textarea3;
-}
-
-/*----*/
-
-.project-pic3 {
+.project-pic1 {
     background-color: brown;
-    grid-area: projectpic3;
+    grid-area: projectpic1;
     position: relative;
+    
   
+}
+
+.project-pic1 img{
+  grid-area: projectpic1;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  
+
+}
+
+
+.project-pic1 p{
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  grid-area: projectpic1;
+}
+
+.project-pic1:hover .overlay{
+  opacity: 0.8;
+}
+
+
+.text-area1{
+    background-color: chartreuse;
+    grid-area: textarea1;
+}
+
+/*--*/
+
+.project-pic2{
+    background-color: cornflowerblue;
+    grid-area: projectpic2;
+    position: relative;
+
+}
+
+    .project-pic2 img{
+      grid-area: projectpic2;
+      height: 100%;
+      width: 100%;
+      background-size: cover;
+      
+}
+
+.project-pic2:hover .overlay{
+  opacity: 0.8;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+.project-pic2 p{
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+.text-area2{
+    background-color: cyan;
+    grid-area: textarea2;
+}
+
+
+
+
+.project-pic3{
+  background-color: cornflowerblue;
+  grid-area: projectpic3;
+
 }
 
 .project-pic3 img{
@@ -274,30 +264,52 @@ div .info-komeptencer{
   height: 100%;
   width: 100%;
   background-size: cover;
+  
+}
+
+.text-area3{
+  background-color: cyan;
+  grid-area: textarea3;
+}
+
+/*----*/
+
+.project-pic3 {
+  background-color: brown;
+  grid-area: projectpic3;
+  position: relative;
+
+}
+
+.project-pic3 img{
+grid-area: projectpic3;
+height: 100%;
+width: 100%;
+background-size: cover;
 
 }
 
 
 .project-pic3 p{
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
+color: white;
+font-size: 20px;
+position: absolute;
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+text-align: center;
 }
 
 .project-pic3:hover .overlay{
-  opacity: 0.8;
+opacity: 0.8;
 }
 
 
 .text-area3{
-    background-color: chartreuse;
-    grid-area: textarea3;
+  background-color: chartreuse;
+  grid-area: textarea3;
 }
 
 
@@ -305,41 +317,41 @@ div .info-komeptencer{
 
 
 .project-pic4 {
-    background-color: brown;
-    grid-area: projectpic4;
-    position: relative;
-  
+  background-color: brown;
+  grid-area: projectpic4;
+  position: relative;
+
 }
 
 .project-pic4 img{
-  grid-area: projectpic4;
-  height: 100%;
-  width: 100%;
-  background-size: cover;
+grid-area: projectpic4;
+height: 100%;
+width: 100%;
+background-size: cover;
 
 }
 
 
 .project-pic4 p{
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
+color: white;
+font-size: 20px;
+position: absolute;
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+text-align: center;
 }
 
 .project-pic4:hover .overlay{
-  opacity: 0.8;
+opacity: 0.8;
 }
 
 
 .text-area4{
-    background-color: chartreuse;
-    grid-area: textarea4;
+  background-color: chartreuse;
+  grid-area: textarea4;
 }
 
 
@@ -347,41 +359,41 @@ div .info-komeptencer{
 
 
 .project-pic5 {
-    background-color: brown;
-    grid-area: projectpic5;
-    position: relative;
-  
+  background-color: brown;
+  grid-area: projectpic5;
+  position: relative;
+
 }
 
 .project-pic5 img{
-  grid-area: projectpic5;
-  height: 100%;
-  width: 100%;
-  background-size: cover;
+grid-area: projectpic5;
+height: 100%;
+width: 100%;
+background-size: cover;
 
 }
 
 
 .project-pic5 p{
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
+color: white;
+font-size: 20px;
+position: absolute;
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+text-align: center;
 }
 
 .project-pic5:hover .overlay{
-  opacity: 0.8;
+opacity: 0.8;
 }
 
 
 .text-area5{
-    background-color: chartreuse;
-    grid-area: textarea5;
+  background-color: chartreuse;
+  grid-area: textarea5;
 }
 
 
@@ -389,78 +401,99 @@ div .info-komeptencer{
 
 
 .project-pic6 {
-    background-color: brown;
-    grid-area: projectpic6;
-    position: relative;
-  
+  background-color: brown;
+  grid-area: projectpic6;
+  position: relative;
+
 }
 
 .project-pic6 img{
-  grid-area: projectpic6;
-  height: 100%;
-  width: 100%;
-  background-size: cover;
+grid-area: projectpic6;
+height: 100%;
+width: 100%;
+background-size: cover;
 
 }
 
 
 .project-pic6 p{
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
+color: white;
+font-size: 20px;
+position: absolute;
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+text-align: center;
 }
 
 .project-pic6:hover .overlay{
-  opacity: 0.8;
+opacity: 0.8;
 }
 
 
 .text-area6{
-    background-color: chartreuse;
-    grid-area: textarea6;
+  background-color: chartreuse;
+  grid-area: textarea6;
 }
 
 
 
 
 
-  /*Footer START*/
+html {
+scroll-behavior: smooth;
+}
 
-  
+#portfolio {
+height: 600px;
+}
 
-  footer{
-      background-color: darkgreen;
-      grid-area: footer;
-  }
+#kontakt{
+height: 600px;
+}
 
-  footer h1{
-    font-size: 50px;
-    text-align: center;
-    margin: 55px;
-    padding-top: 100px;
-  }
+/*Footer START*/
 
 
 
+footer{
+    background-color: darkgreen;
+    grid-area: footer;
+}
 
-/*Medie Queries min. 768px til tablet*/
-@media screen and (min-width:768px){
-    /*Medie Queries til CSS der går igennem alle siderne*/
-    /*Header begynder her*/
-    header{
-        min-height: 10rem;
-    }
+footer h1{
+  font-size: 50px;
+  text-align: center;
+  margin: 55px;
+  padding-top: 100px;
 }
 
 
 
 
+/*Medie Queries max. 500px til tablet*/
+@media (max-width:500px){
+
+.grid-container{
+  grid-template-columns: 1fr;}
+
+
+
+  .kompetencer h1{
+    font-size: 2rem;
+  }
+
+
   
+
+}
+
+
+
+
+
+
 
 
