@@ -71,6 +71,20 @@ color: #B9CBD4;
 }
 
 
+html {
+  scroll-behavior: smooth;
+  }
+  
+  #portfolio {
+  height: 600px;
+  }
+  
+  #kontakt{
+  height: 450px;
+  }
+  
+
+
 /*Header SLUT*/
 
 
@@ -108,7 +122,7 @@ color: #B9CBD4;
     padding-top: 30px;
     grid-area: maintext;
 }
-/*Section med billeder af Giovanna + OM MIG START*/
+/*Section med billeder af Giovanna + OM MIG SLUT*/
 
 
 
@@ -425,21 +439,6 @@ opacity: 0.8;
 /*Projekt bag rattet del2 SLUT*/
 
 
-
-
-html {
-scroll-behavior: smooth;
-}
-
-#portfolio {
-height: 600px;
-}
-
-#kontakt{
-height: 450px;
-}
-
-
 /*Footer START*/
 footer{
     background-color: #C8A98C;
@@ -478,8 +477,9 @@ footer p{
   height: 50px;
   width: 50px;
 }
+/*Footer SLUT*/
 
-/*Medie Queries max. 500px til tablet*/
+/*Medie Queries max. 500px til mobil*/
 @media (max-width:500px){
 
 .grid-container{
