@@ -59,7 +59,7 @@ header .nav-desktop{
 }
 
 
-a:link {
+header a:link {
 text-decoration: none;
 color: whitesmoke;
 
@@ -208,6 +208,23 @@ div .info-komeptencer{
 .text-area1{
     grid-area: textarea1;
 }
+
+.text-area1 h1{
+  margin: 30px;
+}
+
+.text-area1 p{
+  margin: 30px;
+  font-size: 20px;
+}
+
+.text-area1 a{
+  color: #503A2E;
+  margin: 30px;
+  font-size: 20px;
+  text-decoration: underline overline;
+  
+}
 /*Projekt rumrejsen SLUT*/
 
 
@@ -260,6 +277,22 @@ div .info-komeptencer{
 
 .text-area2{
     grid-area: textarea2;
+}
+
+.text-area2 h1{
+  margin: 30px;
+}
+
+.text-area2 p{
+  margin: 30px;
+  font-size: 20px;
+}
+
+.text-area2 a{
+  color: #503A2E;
+  margin: 30px;
+  font-size: 20px;
+  text-decoration: underline overline;
 }
 /*Projekt dans dans dans del1 SLUT*/
 
@@ -318,6 +351,22 @@ opacity: 0.8;
 .text-area3{
   grid-area: textarea3;
 }
+
+.text-area3 h1{
+  margin: 30px;
+}
+
+.text-area3 p{
+  margin: 30px;
+  font-size: 20px;
+}
+
+.text-area3 a{
+  color: #503A2E;
+  margin: 30px;
+  font-size: 20px;
+  text-decoration: underline overline;
+}
 /*Projekt dans dans dans del2 SLUT*/
 
 
@@ -358,6 +407,22 @@ opacity: 0.8;
 .text-area4{
   grid-area: textarea4;
 }
+
+.text-area4 h1{
+  margin: 30px;
+}
+
+.text-area4 p{
+  margin: 30px;
+  font-size: 20px;
+}
+
+.text-area4 a{
+  color: #503A2E;
+  margin: 30px;
+  font-size: 20px;
+  text-decoration: underline overline;
+}
 /*Projekt videoprotræt SLUT*/
 
 
@@ -397,6 +462,22 @@ opacity: 0.8;
 .text-area5{
   grid-area: textarea5;
 }
+
+.text-area5 h1{
+  margin: 30px;
+}
+
+.text-area5 p{
+  margin: 30px;
+  font-size: 20px;
+}
+
+.text-area5 a{
+  color: #503A2E;
+  margin: 30px;
+  font-size: 20px;
+  text-decoration: underline overline;
+}
 /*Projekt bag rattet del1 SLUT*/
 
 
@@ -435,6 +516,22 @@ opacity: 0.8;
 
 .text-area6{
   grid-area: textarea6;
+}
+
+.text-area6 h1{
+  margin: 30px;
+}
+
+.text-area6 p{
+  margin: 30px;
+  font-size: 20px;
+}
+
+.text-area6 a{
+  color: #503A2E;
+  margin: 30px;
+  font-size: 20px;
+  text-decoration: underline overline;
 }
 /*Projekt bag rattet del2 SLUT*/
 
