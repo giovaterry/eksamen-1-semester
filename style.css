@@ -1,0 +1,596 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+
+}
+
+.grid-container{
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "header header header header"
+  "mainpic mainpic maintext maintext"
+  "kompetencer kompetencer kompetencer kompetencer"
+  "projectpic1 projectpic1 textarea1 textarea1"
+  "textarea2 textarea2 projectpic2 projectpic2"
+  "projectpic3 projectpic3 textarea3 textarea3"
+  "textarea4 textarea4 projectpic4 projectpic4"
+  "projectpic5 projectpic5 textarea5 textarea5"
+  "textarea6 textarea6 projectpic6 projectpic6"
+  "footer footer footer footer";
+}
+/*Body*/
+body{
+  background-color: #FBF8F9;
+}
+
+h1{
+  color: #503A2E;
+}
+
+p{
+  color: #503A2E;
+}
+
+/*Header START
+Note: z-index:1 tag gør, 
+at mine position:relative tag elemtenter ikke overlapper min sticky header*/
+header {
+    background-color: #C8A98C;
+    grid-area: header;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1
+    
+    
+}
+
+header .nav-desktop{
+    grid-area: header;
+    margin: 20px;
+    font-size: 20px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+
+.link-nav{
+  padding: 30px;
+}
+
+header a:link {
+text-decoration: none;
+color: whitesmoke;
+
+}
+
+a:hover {
+text-decoration: none;
+color: #B9CBD4;
+}
+
+
+html {
+  scroll-behavior: smooth;
+  }
+  
+  #portfolio {
+  height: 600px;
+  }
+  
+  #kontakt{
+  height: 450px;
+  }
+  
+
+
+/*Header SLUT*/
+
+
+
+
+
+/*Section med billeder af Giovanna + OM MIG START*/
+
+.main-pic{
+    grid-area: mainpic;
+}
+
+.giovanna-pic{
+  grid-area: mainpic;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+
+}
+
+.main-text{
+    grid-area: maintext;
+}
+
+.main-text h1{
+    font-size: 50px;
+    text-align: center;
+    margin: 77px;
+    grid-area: maintext;
+}
+
+.main-text p{
+    font-size: 20px;
+    margin: 50px;
+    padding-top: 30px;
+    grid-area: maintext;
+}
+/*Section med billeder af Giovanna + OM MIG SLUT*/
+
+
+
+
+/*Section med kompetencer START*/
+.kompetencer h1{
+    font-size: 50px;
+    text-align: center;
+    margin: 55px;
+    padding-top: 100px;
+    grid-area: kompetencer;
+    
+}
+
+.kompetencer p{
+  text-align: center;
+  margin: 10px;
+  font-size: 20px;
+}
+
+
+.kompetencer{
+    grid-area: kompetencer;
+}
+
+.kompetencer img{
+   grid-area: kompetencer;
+   width: 10%;
+   height: auto;
+   
+}
+
+
+div .column{
+display: flex;
+justify-content: center;
+justify-content: space-around;
+}
+
+div .info-komeptencer{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+/*Section med kompetencer SLUT*/
+
+
+
+
+
+/*Projekt rumrejsen START*/
+.project-pic1 {
+    grid-area: projectpic1;
+    position: relative;  
+}
+
+.project-pic1 img{
+  grid-area: projectpic1;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+
+
+.project-pic1 p{
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  grid-area: projectpic1;
+}
+
+.project-pic1:hover .overlay{
+  opacity: 0.8;
+}
+
+
+.text-area1{
+    grid-area: textarea1;
+}
+
+.text-area1 h1{
+  margin: 30px;
+}
+
+.text-area1 p{
+  margin: 30px;
+  font-size: 20px;
+}
+
+.text-area1 a{
+  color: #503A2E;
+  margin: 30px;
+  font-size: 20px;
+  text-decoration: underline overline;
+  
+}
+/*Projekt rumrejsen SLUT*/
+
+
+
+/*Projekt dans dans dans del1 START*/
+.project-pic2{
+    grid-area: projectpic2;
+    position: relative;
+
+}
+
+    .project-pic2 img{
+      grid-area: projectpic2;
+      height: 100%;
+      width: 100%;
+      background-size: cover;
+      
+}
+
+.project-pic2:hover .overlay{
+  opacity: 0.8;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+.project-pic2 p{
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+.text-area2{
+    grid-area: textarea2;
+}
+
+.text-area2 h1{
+  margin: 30px;
+}
+
+.text-area2 p{
+  margin: 30px;
+  font-size: 20px;
+}
+
+.text-area2 a{
+  color: #503A2E;
+  margin: 30px;
+  font-size: 20px;
+  text-decoration: underline overline;
+}
+/*Projekt dans dans dans del1 SLUT*/
+
+
+
+/*Projekt dans dans dans del2 START*/
+.project-pic3{
+  grid-area: projectpic3;
+
+}
+
+.project-pic3 img{
+  grid-area: projectpic3;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  
+}
+
+.text-area3{
+  grid-area: textarea3;
+}
+
+.project-pic3 {
+  grid-area: projectpic3;
+  position: relative;
+
+}
+
+.project-pic3 img{
+grid-area: projectpic3;
+height: 100%;
+width: 100%;
+background-size: cover;
+
+}
+
+
+.project-pic3 p{
+color: white;
+font-size: 20px;
+position: absolute;
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+text-align: center;
+}
+
+.project-pic3:hover .overlay{
+opacity: 0.8;
+}
+
+
+.text-area3{
+  grid-area: textarea3;
+}
+
+.text-area3 h1{
+  margin: 30px;
+}
+
+.text-area3 p{
+  margin: 30px;
+  font-size: 20px;
+}
+
+.text-area3 a{
+  color: #503A2E;
+  margin: 30px;
+  font-size: 20px;
+  text-decoration: underline overline;
+}
+/*Projekt dans dans dans del2 SLUT*/
+
+
+
+/*Projekt videoprotræt START*/
+.project-pic4 {
+  grid-area: projectpic4;
+  position: relative;
+
+}
+
+.project-pic4 img{
+grid-area: projectpic4;
+height: 100%;
+width: 100%;
+background-size: cover;
+
+}
+
+
+.project-pic4 p{
+color: white;
+font-size: 20px;
+position: absolute;
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+text-align: center;
+}
+
+.project-pic4:hover .overlay{
+opacity: 0.8;
+}
+
+
+.text-area4{
+  grid-area: textarea4;
+}
+
+.text-area4 h1{
+  margin: 30px;
+}
+
+.text-area4 p{
+  margin: 30px;
+  font-size: 20px;
+}
+
+.text-area4 a{
+  color: #503A2E;
+  margin: 30px;
+  font-size: 20px;
+  text-decoration: underline overline;
+}
+/*Projekt videoprotræt SLUT*/
+
+
+/*Projekt bag rattet del1 START*/
+.project-pic5 {
+  grid-area: projectpic5;
+  position: relative;
+
+}
+
+.project-pic5 img{
+grid-area: projectpic5;
+height: 100%;
+width: 100%;
+background-size: cover;
+
+}
+
+
+.project-pic5 p{
+color: white;
+font-size: 20px;
+position: absolute;
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+text-align: center;
+}
+
+.project-pic5:hover .overlay{
+opacity: 0.8;
+}
+
+
+.text-area5{
+  grid-area: textarea5;
+}
+
+.text-area5 h1{
+  margin: 30px;
+}
+
+.text-area5 p{
+  margin: 30px;
+  font-size: 20px;
+}
+
+.text-area5 a{
+  color: #503A2E;
+  margin: 30px;
+  font-size: 20px;
+  text-decoration: underline overline;
+}
+/*Projekt bag rattet del1 SLUT*/
+
+
+/*Projekt bag rattet del2 START*/
+.project-pic6 {
+  grid-area: projectpic6;
+  position: relative;
+
+}
+
+.project-pic6 img{
+grid-area: projectpic6;
+height: 100%;
+width: 100%;
+background-size: cover;
+
+}
+
+
+.project-pic6 p{
+color: white;
+font-size: 20px;
+position: absolute;
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+text-align: center;
+}
+
+.project-pic6:hover .overlay{
+opacity: 0.8;
+}
+
+
+.text-area6{
+  grid-area: textarea6;
+}
+
+.text-area6 h1{
+  margin: 30px;
+}
+
+.text-area6 p{
+  margin: 30px;
+  font-size: 20px;
+}
+
+.text-area6 a{
+  color: #503A2E;
+  margin: 30px;
+  font-size: 20px;
+  text-decoration: underline overline;
+}
+/*Projekt bag rattet del2 SLUT*/
+
+
+/*Footer START*/
+footer{
+    background-color: #C8A98C;
+    grid-area: footer;
+}
+
+footer h1{
+  font-size: 50px;
+  text-align: center;
+  margin: 40px;
+  padding-top: 50px;
+}
+
+footer p{
+  text-align: center;
+  font-size: 20px;
+}
+
+
+.instagram{
+  display: flex;
+  justify-content: center;
+}
+
+.instagram img{
+  height: 50px;
+  width: 50px;
+}
+
+.facebook{
+  display: flex;
+  justify-content: center;
+}
+
+.facebook img{
+  height: 50px;
+  width: 50px;
+}
+/*Footer SLUT*/
+
+/*Medie Queries max. 500px til mobil*/
+@media (max-width:500px){
+
+.grid-container{
+  grid-template-columns: 1fr;}
+
+
+
+  .kompetencer h1{
+    font-size: 2rem;
+  }
+
+}
+
