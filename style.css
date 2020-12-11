@@ -59,6 +59,10 @@ header .nav-desktop{
 }
 
 
+.link-nav{
+  padding: 30px;
+}
+
 header a:link {
 text-decoration: none;
 color: whitesmoke;
